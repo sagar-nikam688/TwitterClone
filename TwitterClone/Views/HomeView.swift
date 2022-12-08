@@ -8,21 +8,22 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var tweetList = BundleJsonDecoder.decodeTweetListJson()
-
+    @StateObject private var vm: HomeViewModel = HomeViewModel()
     var body: some View {
         VStack {
             HomeHeaderView(style: .home)
-            List(tweetList, id: \.id){ tweet in
+            List(vm.tweetList, id: \.id){ tweet in
                 TweetView(tweet: tweet)
             }.listStyle(.plain)
                 .refreshable {
                     withAnimation {
-                        tweetList.shuffle()
+                        vm.tweetList.shuffle()
                     }
                     print("Do your refresh work here")
                 }
             Spacer()
+        }.onAppear {
+            vm.loadTweets()
         }
     }
 }
