@@ -11,6 +11,7 @@ struct SearchView: View {
     var body: some View {
         VStack {
             HomeHeaderView(style: .search)
+            PageView()
             Spacer() 
         }
     }

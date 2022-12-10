@@ -20,25 +20,29 @@ struct HomeHeaderView: View {
     @State var searchText = ""
     var body: some View {
         HStack {
-            Image(systemName: "person.crop.circle")
+            Image("profile")
                 .resizable()
-                .frame(width: 30, height: 30)
+                .frame(width: 32, height: 32)
             
             Spacer()
             if style == .home {
                 Image("logo")
                     .resizable()
                     .frame(width: 30, height: 30)
+                Spacer()
+                Image(systemName: "wand.and.stars")
+                    .resizable()
+                    .frame(width: 28, height: 28)
             } else if style == .search {
                 TextField("Search Twitter", text: $searchText)
                     .multilineTextAlignment(TextAlignment.center)
                     .textFieldStyle(.roundedBorder)
+                Spacer()
+                Image(systemName: "gearshape")
+                    .resizable()
+                    .frame(width: 28, height: 28)
             }
-            Spacer()
             
-            Image(systemName: "wand.and.stars")
-                .resizable()
-                .frame(width: 30, height: 30)
         }.padding([.leading, .trailing])
     }
 }

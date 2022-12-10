@@ -15,6 +15,8 @@
 		55090B842940DA88006EC2B3 /* BundleJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55090B832940DA88006EC2B3 /* BundleJSONDecoder.swift */; };
 		55090B862941F0CC006EC2B3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55090B852941F0CC006EC2B3 /* SearchView.swift */; };
 		55090B8829423C2D006EC2B3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55090B8729423C2D006EC2B3 /* HomeViewModel.swift */; };
+		5533A1492943278600B6C75A /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533A1482943278600B6C75A /* PageView.swift */; };
+		5533A14B294333EF00B6C75A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533A14A294333EF00B6C75A /* SplashView.swift */; };
 		554B0F1A2940C07C00EB2F35 /* TwitterCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B0F192940C07C00EB2F35 /* TwitterCloneApp.swift */; };
 		554B0F1C2940C07C00EB2F35 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554B0F1B2940C07C00EB2F35 /* Persistence.swift */; };
 		554B0F1F2940C07C00EB2F35 /* TwitterClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 554B0F1D2940C07C00EB2F35 /* TwitterClone.xcdatamodeld */; };
@@ -55,6 +57,8 @@
 		55090B832940DA88006EC2B3 /* BundleJSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleJSONDecoder.swift; sourceTree = "<group>"; };
 		55090B852941F0CC006EC2B3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		55090B8729423C2D006EC2B3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5533A1482943278600B6C75A /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		5533A14A294333EF00B6C75A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		554B0F162940C07C00EB2F35 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554B0F192940C07C00EB2F35 /* TwitterCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneApp.swift; sourceTree = "<group>"; };
 		554B0F1B2940C07C00EB2F35 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				55090B782940D4BA006EC2B3 /* TweetActionView.swift */,
 				55090B7A2940D4DA006EC2B3 /* TweetView.swift */,
 				55090B7C2940D4FC006EC2B3 /* HomeHeaderView.swift */,
+				5533A1482943278600B6C75A /* PageView.swift */,
+				5533A14A294333EF00B6C75A /* SplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55090B842940DA88006EC2B3 /* BundleJSONDecoder.swift in Sources */,
+				5533A14B294333EF00B6C75A /* SplashView.swift in Sources */,
 				554B0F1F2940C07C00EB2F35 /* TwitterClone.xcdatamodeld in Sources */,
 				554B0F1A2940C07C00EB2F35 /* TwitterCloneApp.swift in Sources */,
 				55090B792940D4BA006EC2B3 /* TweetActionView.swift in Sources */,
@@ -341,6 +348,7 @@
 				55090B7D2940D4FC006EC2B3 /* HomeHeaderView.swift in Sources */,
 				55090B862941F0CC006EC2B3 /* SearchView.swift in Sources */,
 				55090B8829423C2D006EC2B3 /* HomeViewModel.swift in Sources */,
+				5533A1492943278600B6C75A /* PageView.swift in Sources */,
 				55090B772940D4A0006EC2B3 /* TweetOwnerDetailsView.swift in Sources */,
 				55090B7B2940D4DA006EC2B3 /* TweetView.swift in Sources */,
 				554B0F1C2940C07C00EB2F35 /* Persistence.swift in Sources */,
@@ -509,6 +517,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -547,6 +556,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

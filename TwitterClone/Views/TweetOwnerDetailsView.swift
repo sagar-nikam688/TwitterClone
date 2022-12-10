@@ -16,12 +16,15 @@ struct TweetOwnerDetailsView: View {
                 .bold()
             +
             Text("\(tweet.account) ")
+                .font(Font.system(size: 15))
                 .foregroundColor(.gray)
             +
             Text("• ")
+                .font(Font.system(size: 15))
                 .foregroundColor(.gray)
             +
             Text("1m")
+                .font(Font.system(size: 15))
                 .foregroundColor(.gray)
             Spacer()
         }

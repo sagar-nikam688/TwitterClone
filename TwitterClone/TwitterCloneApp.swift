@@ -13,7 +13,7 @@ struct TwitterCloneApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootTabView()
+            SplashView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

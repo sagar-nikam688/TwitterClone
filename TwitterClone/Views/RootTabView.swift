@@ -46,6 +46,7 @@ struct RootTabView: View {
 
                 }.tag(4)
         }.accentColor(colorScheme == .dark ? Color.white : Color.blue)
+            .navigationBarHidden(true)
     }
 }
 

@@ -11,7 +11,7 @@ struct TweetView: View {
     var tweet: TweetListResponse
     var body: some View {
         HStack(alignment: .top) {
-            Image(systemName: "person.crop.circle")
+            Image("profile")
                 .resizable()
                 .frame(width: 40, height: 40)
             Spacer()
@@ -27,14 +27,14 @@ struct TweetView: View {
                 
                 Image(tweet.image)
                     .resizable()
-                    .frame(maxHeight: 200)
+                    .frame(maxHeight: 220)
                     .cornerRadius(10)
                     .padding([.top, .bottom], 4)
                 
                 TweetActionView(tweet: tweet)
             }
             
-        }
+        }.padding(6)
     }
 }
 
